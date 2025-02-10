@@ -19,7 +19,7 @@ ReactDom library : to coonect react and dom   (for making intraction possible in
 
 React Element :   React Elements are created using react.createElement and they are js obj  and this obj converted into html , before it goes into the dom 
 
-bundlers : Bundlers in React are tools that package JavaScript files and other assets (like CSS, images, etc.) into a single file or a few files for easier deployment and faster loading in web applications. 
+bundlers : Bundlers in React are tools that package/bundles JavaScript files and other assets (like CSS, images, etc.) into a single file or a few files for easier deployment and faster loading in web applications. 
 
 They help manage dependencies and optimize the code for production. Popular bundlers used in React projects include Webpack, Parcel, Vite and Rollup
 
@@ -32,25 +32,33 @@ They help manage dependencies and optimize the code for production. Popular bund
 
 npm - collection of huge packages 
 
+why to make prj -> npm prj -- bcoz we can use npm pacakge inside our prj
+
  # to crete or make npm prj :  npm init 
 
--> package.json is the configration of npm prj ( how prj is configured - name,git repo,author)
+-> package.json is created which  is the configration of npm prj ( how prj is configured - name,git repo,author)
 
  # devDependices ( packages required for prj)
 
 npm install -D vite   // -D is for making pacakages fall in devdependices in package.json 
 
+in package.json --
+
+devdependenices - only required during dev phase
+
+dependenices - only required during production phase
+
+
+---------------
+
  # install react as npm package / insted of cdn links 
 
 npm i react / i -> install
-
-in package.json --
-
-devdependenices - required during dev phase
-
-dependenices - required during production phase
+npm i react-dom                      --   to avoid cdn links to use react run this cmd's
 
 # package-lock.json - it contains the detield info of all the packages( devDependencies/dependencies) installed in the project
+
+ex: react pacakage also need some other packages to run so this nested packages are listed in package-lock.json
 
 # node modules - it will see all the pkgs and dpndcs installed in the project , and it will reinstall all the pakgs and dpndcs if we run npm install again          // with the cmd -> npm install
 
@@ -70,7 +78,7 @@ for that we need change the file extension of the file from .js to .jsx in both 
 // root2.render(header1);  
 
 
-// JSX is file where we can write both the html and js together 
+// JSX is a js js XML is a syntax extension for JavaScript. It allows you to write HTML in your JavaScript files. It is a syntax sugar for React.createElement() method. 
 
 
 // const jsxHeader = <h1 id='heading" >this is from jsx file </h1>
