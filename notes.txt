@@ -91,6 +91,14 @@ to run any any npm pacakage we use npx - execute npm pckg
 
 creation of react app -> 
 
+requirements :
+
+# have index.html file in which script should be there with   ->
+                        
+                          <script type="module"  src="index.jsx"></script>
+
+# have index.jsx file 
+
 1.first we need to make prj,
 2. instal react and reactdom packsges - to run react code -> npm i react and npm i react-dom
 3..import the packages - 
@@ -99,4 +107,4 @@ creation of react app ->
 
 4.then we need to install bunndler vite -> npm install -D vite
 5.to run the npm pacakage  using vite - we use -> npx vite                                              
-  
+
